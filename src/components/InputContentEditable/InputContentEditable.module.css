@@ -1,0 +1,35 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.input {
+  flex: 1 0 auto;
+  font-size: 14px;
+  text-align: left;
+  outline: none;
+  border: none;
+  max-width: 100%;
+}
+
+.title .input {
+  font-size: 20px;
+}
+
+.placeholder {
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+  color: grey;
+}
+
+.title .placeholder {
+  font-size: 20px;
+}
+
+.lineThrough .input {
+  text-decoration: line-through;
+}

@@ -1,0 +1,17 @@
+{
+  "appId": "com.taskly.app",
+  "productName": "Taskly",
+  "directories": {
+    "buildResources": "resources"
+  },
+  "files": ["assets/**/*", "src/**/*", "app/**/*"],
+  "win": {
+    "target": "nsis",
+    "icon": "assets/icon.png"
+  },
+  "nsis": {
+    "artifactName": "Taskly Setup.exe",
+    "oneClick": false,
+    "deleteAppDataOnUninstall": true
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "postinstall": "electron-builder install-app-deps",
+    "dev": "electron ./",
+    "build:win": "electron-builder build --w --x64 -c ./electron-builder.config.json -p never",
+    "build:mac": "electron-builder build --m -c ./electron-builder.config.json -p never"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8"
+  },
+  "dependencies": {
+    "electron-is-dev": "^3.0.1",
+    "electron-serve": "^2.1.1"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "appId": "com.taskly.app",
+  "productName": "Taskly",
+  "directories": {
+    "buildResources": "resources"
+  },
+  "files": ["assets/**/*", "src/**/*", "app/**/*"],
+  "dmg": {
+    "artifactName": "Taskly Setup.dmg",
+    "icon": "assets/icon.png"
+  }
+}

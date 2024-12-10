@@ -1,0 +1,109 @@
+.wrapper {
+    width: 100%;
+    /* max-width: 63%; */
+    min-height: 182px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e1e1e1;
+    box-shadow: 10px 10px 20px #edecec;
+    border-radius: 10px;
+    flex: 0 0 auto;
+    /* height: 182px; */
+}
+
+.inputContainer {
+    padding: 5px 0 5px 5px;
+    width: 100%;
+    min-height: 120px;
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-word;
+    position: relative;
+}
+
+.taskNameInput {
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+    max-height: 150px;
+    outline: none;
+    border: none;
+    position: relative;
+    overflow: auto;
+}
+.taskNameInput::before {
+    content: attr(data-placeholder);
+    position: absolute;
+    color: #999;
+    pointer-events: none; /* Prevents placeholder from blocking interactions */
+    visibility: visible;
+}
+
+.taskNameInput:not(:empty)::before {
+    content: ""; /* Hide placeholder text when the div is not empty */
+}
+
+.descriptionInput {
+    width: 100%;
+    min-height: 100px;
+    padding-bottom: 5px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    font-weight: lighter;
+    resize: none;
+}
+.descriptionInput::placeholder {
+    color: #767676;
+}
+
+.cancelBtn {
+    width: 15%;
+    padding: 5px;
+    margin-right: 10px;
+    background-color: #f0f0f0;
+    color: #000000;
+    border-radius: 5px;
+    border: 1px solid #f0f0f0;
+}
+
+.cancelBtn:hover {
+    background-color: #e5e5e5;
+    cursor: pointer;
+}
+
+.footer {
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cancelDicardHeader {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.cancelDicard {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.sendTaskBtn {
+    width: 15%;
+    padding: 5px;
+    background-color: #694a72;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.disableBtn {
+    pointer-events: auto;
+    cursor: not-allowed;
+    background-color: #694a728f;
+}
+
+.disableBtn:hover {
+    background-color: #3c2243;
+}
